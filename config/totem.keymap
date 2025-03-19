@@ -166,7 +166,7 @@
             bindings = <
         &kp CARET   &kp DOUBLE_QUOTES   &kp EXCLAMATION &kp LS(LA(LC(U)))       &kp AT_SIGN     &kp LEFT_BRACE  &kp LEFT_BRACKET        &kp HASH        &kp RIGHT_BRACKET       &kp DOLLAR  
         &kp PIPE    &kp UNDERSCORE      &kp SEMICOLON   &kp SLASH               &kp GRAVE       &kp RIGHT_BRACE &kp LEFT_PARENTHESIS    &kp ASTERISK    &kp RIGHT_PARENTHESIS   &kp TILDE  
-&trans  &trans      &kp AMPERSAND       &kp PERCENT     &kp NON_US_BACKSLASH    &trans          &trans          8&kp LESS_THAN          &kp EQUAL       &kp GREATER_THAN        &trans        &trans  
+&trans  &trans      &kp AMPERSAND       &kp PERCENT     &kp NON_US_BACKSLASH    &trans          &trans          &kp LESS_THAN           &kp EQUAL       &kp GREATER_THAN        &trans        &trans  
                                         &trans          &kp MINUS               &kp COLON       &trans          &kp C_FAST_FORWARD      &trans
             >;
         };
@@ -192,8 +192,8 @@
             bindings = <
         &trans  &kp F22 &kp F23         &kp F24         &trans              &trans  &trans      &kp LA(LG(UP_ARROW))    &kp LS(F10)         &mkp MB4  
         &kp F17 &kp F19 &kp F20         &kp CAPSLOCK    &kp C_AC_SEARCH     &kp LA(LG(LEFT))    &kp LA(LG(DOWN))        &kp LA(LG(RIGHT))   &mkp MB5  
-&trans  &kp F13 &kp F14 &kp F15         &kp F16         &trans              &trans  &mkp LCLK   &mkp MCLK               &mkp RCLK           &trans    &trans  
-                &kp LA(LC(U))   &kp LA(LC(X))   &trans              &trans  &kp C_NEXT  &trans
+&trans  &kp F13 &kp F14 &kp F15         &kp F16         &trans              &trans              &mkp LCLK               &mkp MCLK           &mkp RCLK     &trans  
+                &kp LA(LC(U))           &kp LA(LC(X))   &trans              &trans              &kp C_NEXT              &trans
             >;
         };
 
