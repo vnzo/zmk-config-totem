@@ -189,10 +189,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &trans  &kp F22 &kp F23         &kp F24         &trans              &trans  &trans      &kp LA(LG(UP_ARROW))    &kp LS(F10)         &mkp MB4  
-        &kp F17 &kp F19 &kp F20         &kp CAPSLOCK    &kp C_AC_SEARCH     &kp LA(LG(LEFT))    &kp LA(LG(DOWN))        &kp LA(LG(RIGHT))   &mkp MB5  
-&trans  &kp F13 &kp F14 &kp F15         &kp F16         &trans              &trans              &mkp LCLK               &mkp MCLK           &mkp RCLK     &trans  
-                &kp LA(LC(U))           &kp LA(LC(X))   &trans              &trans              &kp C_NEXT              &trans
+        &kp F21 &kp F22 &kp F23 &kp F24    &trans              &trans              &trans              &kp LA(LG(UP_ARROW))    &kp LS(F10)         &mkp MB4  
+        &kp F17 &kp F18 &kp F19 &kp F20    &kp CAPSLOCK        &kp C_AC_SEARCH     &kp LA(LG(LEFT))    &kp LA(LG(DOWN))        &kp LA(LG(RIGHT))   &mkp MB5  
+&trans  &kp F13 &kp F14 &kp F15 &kp F16    &trans              &trans              &mkp LCLK           &mkp MCLK               &mkp RCLK           &trans      &trans
+                &trans &trans &kp LA(LC(U)) &kp LA(LC(X))      &trans              &kp C_NEXT          &trans
             >;
         };
 
