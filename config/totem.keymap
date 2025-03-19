@@ -111,7 +111,6 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-            bindings = <
         &kp LA(F4)  &kp LC(C)   &kp UP_ARROW  &kp LA(LS(U))    &trans      &kp KP_MULTIPLY &kp NUMBER_7    &kp NUMBER_8  &kp NUMBER_9  &kp PLUS  
         &kp INS     &kp LEFT    &kp DOWN      &kp RIGHT        &kp LC(F)   &kp KP_DIVIDE   &kp NUMBER_4    &kp NUMBER_5  &kp NUMBER_6  &kp MINUS  
 &trans  &trans      &kp LC(X)   &kp LC(Z)     &kp LC(V)        &trans      &trans          &kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &trans      &trans  
