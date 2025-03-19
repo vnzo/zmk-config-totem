@@ -111,9 +111,9 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp LA(F4)  &kp LC(C)   &kp UP_ARROW  &kp LA(LS(U))    &trans      &kp KP_MULTIPLY &kp NUMBER_7    &kp NUMBER_8  &kp NUMBER_9  &kp PLUS  
-        &kp INS     &kp LEFT    &kp DOWN      &kp RIGHT        &kp LC(F)   &kp KP_DIVIDE   &kp NUMBER_4    &kp NUMBER_5  &kp NUMBER_6  &kp MINUS  
-&trans  &trans      &kp LC(X)   &kp LC(Z)     &kp LC(V)        &trans      &trans          &kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &trans      &trans  
+        &trans      &kp LC(C)   &kp UP_ARROW  &kp LA(LS(U))    &trans      &kp KP_MULTIPLY &kp NUMBER_7    &kp NUMBER_8  &kp NUMBER_9  &kp PLUS  
+        &kp LA(F4)  &kp LEFT    &kp DOWN      &kp RIGHT        &kp LC(F)   &kp KP_DIVIDE   &kp NUMBER_4    &kp NUMBER_5  &kp NUMBER_6  &kp MINUS  
+&trans  &kp INS     &kp LC(X)   &kp LC(Z)     &kp LC(V)        &trans      &trans          &kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &trans      &trans  
                                 &trans        &kp K_PLAY_PAUSE &trans      &kp EQUAL       &kp NUMBER_0    &trans
             >;
         };
@@ -137,9 +137,9 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp LC(W)     &kp LC(PAGE_UP)         &kp LC(PAGE_DOWN)   &kp LG(D)           &kp PG_UP       &trans          &kp F7          &kp F8          &kp F9  &kp F12
-        &kp LC(LS(T)) &kp LG(LC(LEFT_ARROW))  &kp LC(LG(DOWN))    &kp LC(LG(RIGHT))   &kp PAGE_DOWN   &kp HOME        &kp F4          &kp F5          &kp F6  &kp F11  
-&trans  &trans        &kp LA(LS(ESCAPE))      &kp LC(LG(F4))      &kp LA(ESCAPE)      &trans          &kp END         &kp F1          &kp F2          &kp F3  &kp F10    &trans
+        &trans        &kp LC(PAGE_UP)         &kp LC(PAGE_DOWN)   &kp LG(D)           &kp PG_UP       &trans          &kp F7          &kp F8          &kp F9  &kp F12
+        &kp LC(W)     &kp LG(LC(LEFT_ARROW))  &kp LC(LG(DOWN))    &kp LC(LG(RIGHT))   &kp PAGE_DOWN   &kp HOME        &kp F4          &kp F5          &kp F6  &kp F11  
+&trans  &kp LC(LS(T)) &kp LA(LS(ESCAPE))      &kp LC(LG(F4))      &kp LA(ESCAPE)      &trans          &kp END         &kp F1          &kp F2          &kp F3  &kp F10    &trans
                                               &trans              &kp C_REWIND        &trans          &kp LS(LA(G))   &kp LS(LA(C))   &trans
             >;
         };
@@ -163,9 +163,9 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp CARET   &kp DOUBLE_QUOTES   &kp EXCLAMATION &kp LS(LA(LC(U)))       &kp AT_SIGN     &kp LEFT_BRACE  &kp LEFT_BRACKET        &kp HASH        &kp RIGHT_BRACKET       &kp DOLLAR  
-        &kp PIPE    &kp UNDERSCORE      &kp SEMICOLON   &kp SLASH               &kp GRAVE       &kp RIGHT_BRACE &kp LEFT_PARENTHESIS    &kp ASTERISK    &kp RIGHT_PARENTHESIS   &kp TILDE  
-&trans  &trans      &kp AMPERSAND       &kp PERCENT     &kp NON_US_BACKSLASH    &trans          &trans          &kp LESS_THAN           &kp EQUAL       &kp GREATER_THAN        &trans        &trans  
+        &kp CARET   &kp DOUBLE_QUOTES   &kp EXCLAMATION &kp LS(LA(LC(U)))       &kp AT_SIGN     &kp LEFT_BRACE  &kp LEFT_BRACKET        &kp HASH        &kp RIGHT_BRACKET       &trans   
+        &kp PIPE    &kp UNDERSCORE      &kp SEMICOLON   &kp SLASH               &kp GRAVE       &kp RIGHT_BRACE &kp LEFT_PARENTHESIS    &kp ASTERISK    &kp RIGHT_PARENTHESIS   &kp DOLLAR  
+&trans  &trans      &kp AMPERSAND       &kp PERCENT     &kp NON_US_BACKSLASH    &trans          &trans          &kp LESS_THAN           &kp EQUAL       &kp GREATER_THAN        &kp TILDE        &trans  
                                         &trans          &kp MINUS               &kp COLON       &trans          &kp C_FAST_FORWARD      &trans
             >;
         };
@@ -189,9 +189,9 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp F21 &kp F22 &kp F23 &kp F24    &trans              &trans              &trans              &kp LA(LG(UP_ARROW))    &kp LS(F10)         &mkp MB4  
-        &kp F17 &kp F18 &kp F19 &kp F20    &kp CAPSLOCK        &kp C_AC_SEARCH     &kp LA(LG(LEFT))    &kp LA(LG(DOWN))        &kp LA(LG(RIGHT))   &mkp MB5  
-&trans  &kp F13 &kp F14 &kp F15 &kp F16    &trans              &trans              &mkp LCLK           &mkp MCLK               &mkp RCLK           &trans      &trans
+        &kp F21 &kp F22 &kp F23 &kp F24    &trans              &trans              &trans              &kp LA(LG(UP_ARROW))    &kp LS(F10)         &trans  
+        &kp F17 &kp F18 &kp F19 &kp F20    &kp CAPSLOCK        &kp C_AC_SEARCH     &kp LA(LG(LEFT))    &kp LA(LG(DOWN))        &kp LA(LG(RIGHT))   &mkp MB4  
+&trans  &kp F13 &kp F14 &kp F15 &kp F16    &trans              &trans              &mkp LCLK           &mkp MCLK               &mkp RCLK           &mkp MB5      &trans
                 &trans &trans &kp LA(LC(U)) &kp LA(LC(X))      &trans              &kp C_NEXT          &trans
             >;
         };
