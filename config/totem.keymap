@@ -86,7 +86,7 @@
 
             bindings = <
                      &lt 5 Q     &kp H        &kp O            &mt LEFT_WIN U  &kp QUESTION            &kp G                &mt RIGHT_WIN C  &kp R         &kp F       &kp Z
-                     &mt LGUI Y  &mt LALT R   &mt LCTRL E      &mt LSHFT A     &lt 6 PERIOD            &kp D                &mt RSHFT T      &mt RCTRL S   &mt RALT N  &mt RGUI B
+                     &mt LGUI Y  &mt LALT I   &mt LCTRL E      &mt LSHFT A     &lt 6 PERIOD            &kp D                &mt RSHFT T      &mt RCTRL S   &mt RALT N  &mt RGUI B
 &mt LEFT_WIN ESCAPE  &kp J       &mt LCTRL X  &kp COMMA        &kp K           &kp SQT                 &kp W                &kp M            &kp L         &mt P P     &kp V       &mt RIGHT_WIN C_AL_FILE_BROWSER
                                               &lt 1 BACKSPACE  &lt 2 ENTER     &mt LEFT_SHIFT SPACE    &mt RIGHT_SHIFT TAB  &lt 3 SPACE      &lt 4 DELETE
             >;
