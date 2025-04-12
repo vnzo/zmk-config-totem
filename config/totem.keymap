@@ -30,7 +30,6 @@
 };
 
 / {
-
     macros {
         gif: gif {
             label = "giphy";
@@ -45,6 +44,20 @@
                 <&kp LSHFT>,
                 <&macro_tap>,
                 <&kp G &kp I &kp F>;
+        };
+    };
+
+    combos {
+        compatible = "zmk,combos";
+
+        test {
+            bindings = <&kp A>;
+            key-positions = <2 12 23>;
+        };
+
+        iyea {
+            bindings = <&kp C>;
+            key-positions = <7 17 28>;
         };
     };
 
