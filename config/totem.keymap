@@ -56,7 +56,7 @@
         };
 
         qmark {
-            key-positions = <3 2>;
+            key-positions = <3 14>;
             bindings = <&kp QUESTION>;
         };
 
@@ -72,7 +72,7 @@
 
         esc {
             key-positions = <1 2>;
-            bindings = <&kp TAB>;
+            bindings = <&kp ESCAPE>;
         };
 
         esc2 {
@@ -81,17 +81,17 @@
         };
 
         tab {
-            bindings = <&kp LS(TAB)>;
+            bindings = <&kp TAB>;
             key-positions = <7 8>;
         };
 
         rshift {
             bindings = <&kp LS(RIGHT_SHIFT)>;
-            key-positions = <19 18>;
+            key-positions = <30 18>;
         };
 
         lshitf {
-            key-positions = <10 11>;
+            key-positions = <11 21>;
             bindings = <&kp LEFT_SHIFT>;
         };
 
@@ -102,12 +102,12 @@
 
         l-ctrl {
             bindings = <&kp LCTRL>;
-            key-positions = <12 23>;
+            key-positions = <12 22>;
         };
 
         r-ctrl {
             bindings = <&kp RCTRL>;
-            key-positions = <17 28>;
+            key-positions = <17 29>;
         };
 
         lbraket {
@@ -132,7 +132,7 @@
 
         pgdn {
             bindings = <&kp PAGE_DOWN>;
-            key-positions = <13 3>;
+            key-positions = <13 24>;
         };
 
         del2 {
@@ -167,22 +167,60 @@
             layers = <5>;
         };
 
-        f12 {
-            bindings = <&kp F12>;
+        S-tab {
+            bindings = <&kp RS(TAB)>;
             key-positions = <8 9>;
-            layers = <2>;
         };
 
-        f21 {
-            bindings = <&kp F21>;
+        tab {
+            bindings = <&kp TAB>;
             key-positions = <1 0>;
-            layers = <4>;
         };
 
         numpad-lock {
             bindings = <&kp KP_NUMLOCK>;
             key-positions = <8 9>;
             layers = <1>;
+        };
+
+        L-mid-up {
+            bindings = <&kp PG_UP>;
+            key-positions = <2 12>;
+        };
+
+        L-mid-dn {
+            bindings = <&kp PAGE_DOWN>;
+            key-positions = <23 12>;
+        };
+
+        R-mid-up {
+            bindings = <&kp HOME>;
+            key-positions = <7 17>;
+        };
+
+        R-mid-dn {
+            bindings = <&kp END>;
+            key-positions = <17 28>;
+        };
+
+        L-shift-dn {
+            bindings = <&kp LEFT_SHIFT>;
+            key-positions = <21 11>;
+        };
+
+        L-ctrl-dn {
+            bindings = <&kp LCTRL>;
+            key-positions = <12 22>;
+        };
+
+        R-shift-dn {
+            bindings = <&none>;
+            key-positions = <30 18>;
+        };
+
+        R-ctrl-dn {
+            bindings = <&kp RCTRL>;
+            key-positions = <17 29>;
         };
     };
 
@@ -208,10 +246,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                     &lt 5 Q  &kp H        &kp O               &mt LEFT_WIN U   &kp QUESTION    &kp G        &mt RIGHT_WIN C  &kp R            &kp F    &kp Z
-                     &kp Y    &kp I        &kp E               &mt LSHFT A      &lt 6 PERIOD    &kp D        &mt RSHFT T      &kp S            &kp N    &kp B
-&mt LEFT_WIN ESCAPE  &kp J    &mt LCTRL X  &mt LEFT_ALT COMMA  &kp K            &kp SQT         &kp W        &kp M            &mt RIGHT_ALT L  &mt P P  &kp V  &mt RIGHT_WIN C_AL_FILE_BROWSER
-                                           &lt 1 BACKSPACE     &lt 1 BACKSPACE  &lt 2 ENTER     &lt 3 SPACE  &lt 4 DELETE     &lt 4 DELETE
+                     &lt 5 Q  &kp H        &kp O               &mt LEFT_WIN U  &kp QUESTION    &kp G      &mt RIGHT_WIN C  &kp R            &kp F    &kp Z
+                     &kp Y    &kp I        &kp E               &mt LSHFT A     &lt 6 PERIOD    &kp D      &mt RSHFT T      &kp S            &kp N    &kp B
+&mt LEFT_WIN ESCAPE  &kp J    &mt LCTRL X  &mt LEFT_ALT COMMA  &kp K           &kp SQT         &kp W      &kp M            &mt RIGHT_ALT L  &mt P P  &kp V  &mt RIGHT_WIN C_AL_FILE_BROWSER
+                                           &lt 1 BACKSPACE     &lt 2 ENTER     &lt 7 SPACE     &lt 8 TAB  &lt 3 SPACE      &lt 4 DELETE
             >;
         };
 
@@ -351,6 +389,24 @@
         &trans               &trans  &trans  &trans  &trans    &trans  &trans  &kp C_VOLUME_DOWN  &trans  &trans
 &trans  &trans               &trans  &trans  &trans  &trans    &trans  &trans  &kp C_MUTE         &trans  &trans  &trans
                                      &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        layer_7 {
+            bindings = <
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        layer_8 {
+            bindings = <
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
