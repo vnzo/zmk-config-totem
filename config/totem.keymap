@@ -30,7 +30,6 @@
 };
 
 / {
-
     combos {
         compatible = "zmk,combos";
 
@@ -48,7 +47,7 @@
         };
 
         qmark {
-            key-positions = <3 4>;
+            key-positions = <3 2>;
             bindings = <&kp QUESTION>;
             layers = <DEF>;
         };
@@ -130,7 +129,7 @@
 
         pgdn {
             bindings = <&kp PAGE_DOWN>;
-            key-positions = <22 13>;
+            key-positions = <13 3>;
         };
 
         del2 {
@@ -150,12 +149,12 @@
 
         end {
             bindings = <&kp END>;
-            key-positions = <16 23>;
+            key-positions = <16 27>;
         };
 
         ble-clr-all {
             bindings = <&bt BT_CLR_ALL>;
-            key-positions = <5 15>;
+            key-positions = <15 26>;
             layers = <5>;
         };
 
@@ -180,7 +179,7 @@
         numpad-lock {
             bindings = <&kp KP_NUMLOCK>;
             key-positions = <8 9>;
-            layers = <4>;
+            layers = <1>;
         };
     };
 
@@ -313,7 +312,7 @@
         L4_FNMO {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 
-            label = "FN";
+            label = "F#";
 
             // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
             //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
@@ -360,7 +359,7 @@
             >;
         };
 
-        L6_MEDI {
+        L5_MEDI {
             bindings = <
         &kp LC(PRINTSCREEN)  &trans  &trans  &trans  &trans    &trans  &trans  &kp C_VOLUME_UP    &trans  &trans
         &trans               &trans  &trans  &trans  &trans    &trans  &trans  &kp C_VOLUME_DOWN  &trans  &trans
