@@ -172,7 +172,7 @@
             key-positions = <8 9>;
         };
 
-        tab {
+        tab2 {
             bindings = <&kp TAB>;
             key-positions = <1 0>;
         };
