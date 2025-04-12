@@ -102,12 +102,12 @@
 
         l-ctrl {
             bindings = <&kp LCTRL>;
-            key-positions = <2 12>;
+            key-positions = <12 23>;
         };
 
         r-ctrl {
             bindings = <&kp RCTRL>;
-            key-positions = <7 17>;
+            key-positions = <17 28>;
         };
 
         lbraket {
@@ -208,10 +208,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                     &lt 5 Q  &kp H        &kp O            &mt LEFT_WIN U  &kp QUESTION    &kp G        &mt RIGHT_WIN C  &kp R         &kp F    &kp Z
-                     &kp Y    &kp I        &kp E            &mt LSHFT A     &lt 6 PERIOD    &kp D        &mt RSHFT T      &kp S         &kp N    &kp B
-&mt LEFT_WIN ESCAPE  &kp J    &mt LCTRL X  &kp COMMA        &kp K           &kp SQT         &kp W        &kp M            &kp L         &mt P P  &kp V  &mt RIGHT_WIN C_AL_FILE_BROWSER
-                                           &lt 1 BACKSPACE  &lt 2 ENTER     &lt 2 ENTER     &lt 3 SPACE  &lt 3 SPACE      &lt 4 DELETE
+                     &lt 5 Q  &kp H        &kp O               &mt LEFT_WIN U   &kp QUESTION    &kp G        &mt RIGHT_WIN C  &kp R            &kp F    &kp Z
+                     &kp Y    &kp I        &kp E               &mt LSHFT A      &lt 6 PERIOD    &kp D        &mt RSHFT T      &kp S            &kp N    &kp B
+&mt LEFT_WIN ESCAPE  &kp J    &mt LCTRL X  &mt LEFT_ALT COMMA  &kp K            &kp SQT         &kp W        &kp M            &mt RIGHT_ALT L  &mt P P  &kp V  &mt RIGHT_WIN C_AL_FILE_BROWSER
+                                           &lt 1 BACKSPACE     &lt 1 BACKSPACE  &lt 2 ENTER     &lt 3 SPACE  &lt 4 DELETE     &lt 4 DELETE
             >;
         };
 
