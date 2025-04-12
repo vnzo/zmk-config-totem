@@ -50,6 +50,50 @@
     combos {
         compatible = "zmk,combos";
 
+        L-mid-up {
+            bindings = <&kp PG_UP>;
+            key-positions = <2 12>;
+        };
+
+        L-mid-dn {
+            bindings = <&kp PAGE_DOWN>;
+            key-positions = <23 12>;
+        };
+
+        R-mid-up {
+            bindings = <&kp HOME>;
+            key-positions = <7 17>;
+        };
+
+        R-mid-dn {
+            bindings = <&kp END>;
+            key-positions = <17 28>;
+        };
+
+        L-shift-dn {
+            bindings = <&kp LEFT_SHIFT>;
+            key-positions = <21 11>;
+        };
+
+        L-ctrl-dn {
+            bindings = <&kp LCTRL>;
+            key-positions = <12 22>;
+        };
+
+        R-shift-dn {
+            bindings = <&none>;
+            key-positions = <30 18>;
+        };
+
+        R-ctrl-dn {
+            bindings = <&kp RCTRL>;
+            key-positions = <17 29>;
+        };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <7 8>;
+        };
 
     };
 
