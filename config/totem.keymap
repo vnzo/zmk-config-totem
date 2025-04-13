@@ -98,18 +98,17 @@
             timeout-ms = <100>;
         };
 
-        L-shift {
+        lshift {
             bindings = <&kp LEFT_SHIFT>;
             key-positions = <11 21>;
             timeout-ms = <100>;
         };
 
-        L-ctrl {
+        lctrl {
             bindings = <&kp LCTRL>;
             key-positions = <12 22>;
             timeout-ms = <100>;
         };
-
     };
 
     keymap {
