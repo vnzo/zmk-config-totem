@@ -89,31 +89,43 @@
         tab {
             bindings = <&kp TAB>;
             key-positions = <7 8>;
+            timeout-ms = <100>;
+            layers = <0>;
         };
 
         tab-S {
             bindings = <&kp RS(TAB)>;
             key-positions = <9 8>;
+            timeout-ms = <100>;
+            layers = <0>;
         };
 
         L-shift {
             bindings = <&kp LEFT_SHIFT>;
             key-positions = <21 11>;
+            timeout-ms = <100>;
+            layers = <0>;
         };
 
         L-ctrl {
             bindings = <&kp LCTRL>;
             key-positions = <12 22>;
+            timeout-ms = <100>;
+            layers = <0>;
         };
 
         R-shift {
             bindings = <&kp RIGHT_SHIFT>;
             key-positions = <30 18>;
+            timeout-ms = <100>;
+            layers = <0>;
         };
 
         R-ctrl {
             bindings = <&kp RCTRL>;
             key-positions = <29 17>;
+            timeout-ms = <100>;
+            layers = <0>;
         };
     };
 
