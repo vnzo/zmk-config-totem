@@ -93,7 +93,7 @@
 
         tab-shift {
             bindings = <&kp RS(TAB)>;
-            key-positions = <18 9>;
+            key-positions = <9 8>;
         };
     };
 
