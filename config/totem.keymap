@@ -90,27 +90,26 @@
             bindings = <&kp TAB>;
             key-positions = <7 8>;
             timeout-ms = <100>;
-            layers = <0>;
         };
 
         tab-shift {
             bindings = <&kp RS(TAB)>;
             key-positions = <9 8>;
             timeout-ms = <100>;
-            layers = <0>;
         };
 
-        /*
-L-shift {
+        L-shift {
             bindings = <&kp LEFT_SHIFT>;
             key-positions = <11 21>;
+            timeout-ms = <100>;
         };
 
         L-ctrl {
             bindings = <&kp LCTRL>;
             key-positions = <12 22>;
+            timeout-ms = <100>;
         };
-*/
+
     };
 
     keymap {
