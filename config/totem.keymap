@@ -90,6 +90,11 @@
             bindings = <&kp TAB>;
             key-positions = <7 8>;
         };
+
+        tab-shift {
+            bindings = <&kp RS(TAB)>;
+            key-positions = <18 9>;
+        };
     };
 
     keymap {
