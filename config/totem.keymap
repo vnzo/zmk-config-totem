@@ -80,12 +80,6 @@
             bindings = <&kp ESCAPE>;
         };
 
-        rshift-rime {
-            timeout-ms = <50>;
-            bindings = <&kp RIGHT_SHIFT>;
-            key-positions = <27 28>;
-        };
-
         lbraket {
             timeout-ms = <50>;
             bindings = <&kp LEFT_PARENTHESIS>;
@@ -104,10 +98,10 @@
             key-positions = <19 31>;
         };
 
-        pgup {
+        my-pc {
             timeout-ms = <50>;
-            bindings = <&kp PAGE_UP>;
-            key-positions = <3 13>;
+            bindings = <&kp C_AL_MY_COMPUTER>;
+            key-positions = <19 31>;
         };
 
         space1 {
@@ -116,22 +110,16 @@
             key-positions = <13 24>;
         };
 
-        del2 {
+        space1 {
             timeout-ms = <50>;
-            bindings = <&kp DELETE>;
-            key-positions = <14 25>;
+            bindings = <&kp SPACE>;
+            key-positions = <13 24>;
         };
 
         home {
             timeout-ms = <50>;
             bindings = <&kp HOME>;
             key-positions = <6 16>;
-        };
-
-        end {
-            timeout-ms = <50>;
-            bindings = <&kp END>;
-            key-positions = <16 27>;
         };
 
         ble-clr-all {
@@ -154,10 +142,11 @@
             key-positions = <7 8>;
         };
 
-        tab2 {
+        blu-clr-current {
             timeout-ms = <50>;
-            bindings = <&kp TAB>;
-            key-positions = <1 0>;
+            bindings = <&bt BT_CLR>;
+            key-positions = <19 30>;
+            layers = <5>;
         };
 
         s-tab {
@@ -219,6 +208,17 @@
             timeout-ms = <50>;
             bindings = <&kp RCTRL>;
             key-positions = <17 29>;
+        };
+
+        r-shift-dn {
+            bindings = <&kp RIGHT_SHIFT>;
+            key-positions = <18 30>;
+            timeout-ms = <50>;
+        };
+
+        vul-dn {
+            bindings = <&kp C_VOLUME_DOWN>;
+            key-positions = <26 15>;
         };
 
         vul-up {
