@@ -49,9 +49,6 @@
 
     combos {
         compatible = "zmk,combos";
-
-    combos {
-        compatible = "zmk,combos";
     
         q {
             timeout-ms = <50>;
