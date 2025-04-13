@@ -159,17 +159,23 @@
             key-positions = <9 20>;
             layers = <5>;
         };
+
+            tab {
+            timeout-ms = <50>;
+            bindings = <&kp TAB>;
+            key-positions = <7 8>;
+        };
+
+        tab2 {
+            timeout-ms = <50>;
+            bindings = <&kp TAB>;
+            key-positions = <1 0>;
+        };
     
         s-tab {
             timeout-ms = <50>;
             bindings = <&kp RS(TAB)>;
             key-positions = <8 9>;
-        };
-    
-        tab2 {
-            timeout-ms = <50>;
-            bindings = <&kp TAB>;
-            key-positions = <1 0>;
         };
     
         numpad-lock {
@@ -214,6 +220,12 @@
             bindings = <&kp LCTRL>;
             key-positions = <12 22>;
         };
+
+        r-shift-dn {
+            timeout-ms = <50>;
+            bindings = <&kp RIGHT_SHIFT>;
+            key-positions = <21 12>;
+        };
     
         r-ctrl-dn {
             timeout-ms = <50>;
@@ -221,11 +233,6 @@
             key-positions = <17 29>;
         };
     
-        tab {
-            timeout-ms = <50>;
-            bindings = <&kp TAB>;
-            key-positions = <7 8>;
-        };
     };
 
     keymap {
@@ -253,7 +260,7 @@
                      &lt 5 Q  &kp H        &kp O               &mt LEFT_WIN U  &kp QUESTION    &kp G        &mt RIGHT_WIN C  &kp R            &kp F    &kp Z
                      &kp Y    &kp I        &kp E               &mt LSHFT A     &lt 6 PERIOD    &kp D        &mt RSHFT T      &kp S            &kp N    &kp B
 &mt LEFT_WIN ESCAPE  &kp J    &mt LCTRL X  &mt LEFT_ALT COMMA  &kp K           &kp SQT         &kp W        &kp M            &mt RIGHT_ALT L  &mt P P  &kp V  &mt RIGHT_WIN C_AL_FILE_BROWSER
-                                           &lt 1 BACKSPACE     &lt 1 BACKSPACE &lt 2 ENTER     &lt 3 SPACE  &lt 4 DELETE     &lt 4 DELETE
+                                           &kp LALT            &lt 1 BACKSPACE &lt 2 ENTER     &lt 3 SPACE  &lt 4 DELETE     &kp RALT
             >;
         };
 
