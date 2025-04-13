@@ -85,20 +85,6 @@
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <18 8>;
         };
-
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <7 8>;
-            timeout-ms = <100>;
-            layers = <0>;
-        };
-
-        tab-S {
-            bindings = <&kp RS(TAB)>;
-            key-positions = <9 8>;
-            timeout-ms = <100>;
-            layers = <0>;
-        };
     };
 
     keymap {
