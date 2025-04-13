@@ -49,118 +49,106 @@
 
     combos {
         compatible = "zmk,combos";
-    
+
         q {
             timeout-ms = <50>;
             key-positions = <0 1>;
             bindings = <&kp Q>;
         };
-    
+
         qmark {
             timeout-ms = <50>;
             key-positions = <3 14>;
             bindings = <&kp QUESTION>;
         };
-    
+
         qmark2 {
             timeout-ms = <50>;
             key-positions = <22 23>;
             bindings = <&kp QUESTION>;
         };
-    
+
         del {
             timeout-ms = <50>;
             key-positions = <23 24>;
             bindings = <&kp DEL>;
         };
-    
+
         esc {
             timeout-ms = <50>;
             key-positions = <1 2>;
             bindings = <&kp ESCAPE>;
         };
-    
-        esc2 {
-            timeout-ms = <50>;
-            bindings = <&kp ESCAPE>;
-            key-positions = <0 10>;
-        };
-    
+
         rshift-rime {
             timeout-ms = <50>;
             bindings = <&kp RIGHT_SHIFT>;
             key-positions = <27 28>;
         };
-    
+
         lbraket {
             timeout-ms = <50>;
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <1 11>;
         };
-    
+
         rparen {
             timeout-ms = <50>;
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <18 8>;
         };
-    
+
         my-pc {
             timeout-ms = <50>;
             bindings = <&kp C_AL_MY_COMPUTER>;
-            key-positions = <9 19>;
+            key-positions = <19 31>;
         };
-    
+
         pgup {
             timeout-ms = <50>;
             bindings = <&kp PAGE_UP>;
             key-positions = <3 13>;
         };
-    
-        pgdn {
+
+        space1 {
             timeout-ms = <50>;
-            bindings = <&kp PAGE_DOWN>;
+            bindings = <&kp SPACE>;
             key-positions = <13 24>;
         };
-    
+
         del2 {
             timeout-ms = <50>;
             bindings = <&kp DELETE>;
             key-positions = <14 25>;
         };
-    
-        play {
-            timeout-ms = <50>;
-            bindings = <&kp LS(C_PLAY_PAUSE)>;
-            key-positions = <15 26>;
-        };
-    
+
         home {
             timeout-ms = <50>;
             bindings = <&kp HOME>;
             key-positions = <6 16>;
         };
-    
+
         end {
             timeout-ms = <50>;
             bindings = <&kp END>;
             key-positions = <16 27>;
         };
-    
+
         ble-clr-all {
             timeout-ms = <50>;
             bindings = <&bt BT_CLR_ALL>;
             key-positions = <15 26>;
             layers = <5>;
         };
-    
+
         blu-clr-current {
             timeout-ms = <50>;
             bindings = <&bt BT_CLR>;
-            key-positions = <9 20>;
+            key-positions = <19 30>;
             layers = <5>;
         };
 
-            tab {
+        tab {
             timeout-ms = <50>;
             bindings = <&kp TAB>;
             key-positions = <7 8>;
@@ -171,50 +159,50 @@
             bindings = <&kp TAB>;
             key-positions = <1 0>;
         };
-    
+
         s-tab {
             timeout-ms = <50>;
             bindings = <&kp RS(TAB)>;
             key-positions = <8 9>;
         };
-    
+
         numpad-lock {
             timeout-ms = <50>;
             bindings = <&kp KP_NUMLOCK>;
             key-positions = <8 9>;
             layers = <1>;
         };
-    
+
         l-mid-up {
             timeout-ms = <50>;
             bindings = <&kp PG_UP>;
             key-positions = <2 12>;
         };
-    
+
         l-mid-dn {
             timeout-ms = <50>;
             bindings = <&kp PAGE_DOWN>;
             key-positions = <23 12>;
         };
-    
+
         r-mid-up {
             timeout-ms = <50>;
             bindings = <&kp HOME>;
             key-positions = <7 17>;
         };
-    
+
         r-mid-dn {
             timeout-ms = <50>;
             bindings = <&kp END>;
             key-positions = <17 28>;
         };
-    
+
         l-shift-dn {
             timeout-ms = <50>;
             bindings = <&kp LEFT_SHIFT>;
             key-positions = <21 11>;
         };
-    
+
         l-ctrl-dn {
             timeout-ms = <50>;
             bindings = <&kp LCTRL>;
@@ -224,15 +212,29 @@
         r-shift-dn {
             timeout-ms = <50>;
             bindings = <&kp RIGHT_SHIFT>;
-            key-positions = <21 12>;
+            key-positions = <18 30>;
         };
-    
+
         r-ctrl-dn {
             timeout-ms = <50>;
             bindings = <&kp RCTRL>;
             key-positions = <17 29>;
         };
-    
+
+        vul-up {
+            bindings = <&kp C_VOLUME_UP>;
+            key-positions = <5 15>;
+        };
+
+        vul-dn {
+            bindings = <&kp C_VOLUME_DOWN>;
+            key-positions = <26 15>;
+        };
+
+        l-shift {
+            bindings = <&kp LEFT_SHIFT>;
+            key-positions = <10 20>;
+        };
     };
 
     keymap {
@@ -257,10 +259,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                     &lt 5 Q  &kp H        &kp O               &mt LEFT_WIN U  &kp QUESTION    &kp G        &mt RIGHT_WIN C  &kp R            &kp F    &kp Z
-                     &kp Y    &kp I        &kp E               &mt LSHFT A     &lt 6 PERIOD    &kp D        &mt RSHFT T      &kp S            &kp N    &kp B
-&mt LEFT_WIN ESCAPE  &kp J    &mt LCTRL X  &mt LEFT_ALT COMMA  &kp K           &kp SQT         &kp W        &kp M            &mt RIGHT_ALT L  &mt P P  &kp V  &mt RIGHT_WIN C_AL_FILE_BROWSER
-                                           &kp LALT            &lt 1 BACKSPACE &lt 2 ENTER     &lt 3 SPACE  &lt 4 DELETE     &kp RALT
+                     &lt 5 Q  &kp H        &kp O               &mt LEFT_WIN U   &kp QUESTION    &kp G        &mt RIGHT_WIN C  &kp R            &kp F    &kp Z
+                     &kp Y    &kp I        &kp E               &mt LSHFT A      &lt 6 PERIOD    &kp D        &mt RSHFT T      &kp S            &kp N    &kp B
+&mt LEFT_WIN ESCAPE  &kp J    &mt LCTRL X  &mt LEFT_ALT COMMA  &kp K            &kp SQT         &kp W        &kp M            &mt RIGHT_ALT L  &mt P P  &kp V  &mt RIGHT_WIN C_AL_FILE_BROWSER
+                                           &kp LALT            &lt 1 BACKSPACE  &lt 2 ENTER     &lt 3 SPACE  &lt 4 DELETE     &kp RALT
             >;
         };
 
@@ -283,10 +285,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                     &kp LA(TAB)  &kp LC(C)  &kp UP_ARROW  &kp LA(LS(U))   &kp LA(LS(X))    &kp KP_MULTIPLY  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS
-                     &kp LA(F4)   &kp LEFT   &kp DOWN      &kp RIGHT       &kp LC(F)        &kp KP_DIVIDE    &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS
-&mt LEFT_WIN DELETE  &kp INS      &kp LC(X)  &kp LC(Z)     &kp LC(V)       &kp LA(TAB)      &kp PERIOD       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp DOT    &mt RIGHT_WIN ENTER
-                                             &trans        &kp C_PREVIOUS  &kp C_NEXT       &kp EQUAL        &kp EQUAL     &kp NUMBER_0
+                     &kp LA(TAB)  &kp LC(C)  &kp UP_ARROW  &kp LA(LS(U))  &kp LA(LS(X))    &kp KP_MULTIPLY  &kp NUMBER_7  &kp NUMBER_8   &kp NUMBER_9  &kp PLUS
+                     &kp LA(F4)   &kp LEFT   &kp DOWN      &kp RIGHT      &kp LC(F)        &kp KP_DIVIDE    &kp NUMBER_4  &kp NUMBER_5   &kp NUMBER_6  &kp MINUS
+&mt LEFT_WIN DELETE  &kp INS      &kp LC(X)  &kp LC(Z)     &kp LC(V)      &kp LA(TAB)      &kp PERIOD       &kp NUMBER_1  &kp NUMBER_2   &kp NUMBER_3  &kp DOT    &mt RIGHT_WIN ENTER
+                                             &kp C_PREV    &none          &kp C_NEXT       &kp EQUAL        &kp NUMBER_0  &kp C_AL_CALC
             >;
         };
 
@@ -309,10 +311,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                   &kp LG(V)      &kp LC(PAGE_UP)         &kp LC(PAGE_DOWN)  &kp LG(D)          &kp LA(LG(PRINTSCREEN))    &trans         &kp F7         &kp F8         &kp F9  &kp F12
-                   &kp LC(W)      &kp LG(LC(LEFT_ARROW))  &kp LC(LG(DOWN))   &kp LC(LG(RIGHT))  &kp PG_UP                  &kp HOME       &kp F4         &kp F5         &kp F6  &kp F11
-&mt LEFT_WIN HOME  &kp LC(LS(T))  &kp LA(LS(ESCAPE))      &kp LC(LG(F4))     &kp LA(ESCAPE)     &kp PAGE_DOWN              &kp END        &kp F1         &kp F2         &kp F3  &kp F10  &kp LS(LA(F9))
-                                                          &kp C_REWIND       &trans             &kp C_FAST_FORWARD         &kp LS(LA(G))  &kp LS(LA(G))  &kp LS(LA(C))
+                   &kp LG(V)      &kp LC(PAGE_UP)         &kp LC(PAGE_DOWN)  &kp LG(D)           &kp LA(LG(PRINTSCREEN))    &trans         &kp F7         &kp F8         &kp F9  &kp F12
+                   &kp LC(W)      &kp LG(LC(LEFT_ARROW))  &kp LC(LG(DOWN))   &kp LC(LG(RIGHT))   &kp PG_UP                  &kp HOME       &kp F4         &kp F5         &kp F6  &kp F11
+&mt LEFT_WIN HOME  &kp LC(LS(T))  &kp LA(LS(ESCAPE))      &kp LC(LG(F4))     &kp LA(ESCAPE)      &kp PAGE_DOWN              &kp END        &kp F1         &kp F2         &kp F3  &kp F10  &kp LS(LA(F9))
+                                                          &kp C_REWIND       &kp C_FAST_FORWARD  &none                      &kp LS(LA(X))  &kp LS(LA(G))  &kp LS(LA(C))
             >;
         };
 
@@ -335,10 +337,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                &kp CARET  &kp DOUBLE_QUOTES  &kp EXCLAMATION  &kp LS(LA(LC(U)))     &kp LS(LG(S))    &trans           &kp LEFT_BRACKET      &kp HASH            &kp RIGHT_BRACKET      &kp END
-                &kp PIPE   &kp UNDERSCORE     &kp SEMICOLON    &kp SLASH             &kp AT_SIGN      &kp LEFT_BRACE   &kp LEFT_PARENTHESIS  &kp ASTERISK        &kp RIGHT_PARENTHESIS  &kp DOLLAR
-&kp LA(LC(F8))  &kp INS    &kp AMPERSAND      &kp PERCENT      &kp NON_US_BACKSLASH  &kp GRAVE        &kp RIGHT_BRACE  &kp LESS_THAN         &kp HOME            &kp GREATER_THAN       &kp TILDE   &kp LA(LC(F9))
-                                              &kp MINUS        &kp COLON             &kp COLON        &kp C_REWIND     &trans                &kp C_FAST_FORWARD
+                &kp CARET  &kp DOUBLE_QUOTES  &kp EXCLAMATION       &kp LS(LA(LC(U)))     &kp LS(LG(S))    &trans           &kp LEFT_BRACKET      &kp HASH        &kp RIGHT_BRACKET      &kp END
+                &kp PIPE   &kp UNDERSCORE     &kp SEMICOLON         &kp SLASH             &kp AT_SIGN      &kp LEFT_BRACE   &kp LEFT_PARENTHESIS  &kp ASTERISK    &kp RIGHT_PARENTHESIS  &kp DOLLAR
+&kp LA(LC(F8))  &kp INS    &kp AMPERSAND      &kp PERCENT           &kp NON_US_BACKSLASH  &kp GRAVE        &kp RIGHT_BRACE  &kp LESS_THAN         &kp HOME        &kp GREATER_THAN       &kp TILDE   &kp LA(LC(F9))
+                                              &kp C_AL_TEXT_EDITOR  &kp MINUS             &kp COLON        &none            &kp LC(C_PREVIOUS)    &kp LC(C_NEXT)
             >;
         };
 
@@ -361,10 +363,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                                 &kp F21  &kp F22  &kp F23        &kp F24        &caps_word         &kp LA(LC(G))           &kp C_AC_PASTE    &kp LA(LG(UP_ARROW))  &kp LS(F10)        &kp LA(LC(Z))
-                                 &kp F17  &kp F18  &kp F19        &kp F20        &kp C_AC_SEARCH    &mkp MB2                &kp LA(LG(LEFT))  &kp LA(LG(DOWN))      &kp LA(LG(RIGHT))  &mkp MB4
-&mt LA(LC(LEFT_WIN)) LA(LC(F6))  &kp F13  &kp F14  &kp F15        &kp F16        &kp CAPS           &mkp MB3                &mkp LCLK         &mkp MCLK             &mkp RCLK          &mkp MB5       &mt RIGHT_WIN LA(LC(F11))
-                                                   &kp LA(LC(X))  &kp LA(LC(U))  &kp LA(LC(U))      &kp LA(LC(C_PREVIOUS))  &kp C_NEXT        &trans
+                                 &kp F21  &kp F22  &kp F23        &kp F24        &caps_word         &kp LA(LC(G))       &kp C_AC_PASTE    &kp LA(LG(UP_ARROW))  &kp LS(F10)        &kp LA(LC(Z))
+                                 &kp F17  &kp F18  &kp F19        &kp F20        &kp C_AC_SEARCH    &mkp MB2            &kp LA(LG(LEFT))  &kp LA(LG(DOWN))      &kp LA(LG(RIGHT))  &mkp MB4
+&mt LA(LC(LEFT_WIN)) LA(LC(F6))  &kp F13  &kp F14  &kp F15        &kp F16        &kp CAPS           &mkp MB3            &mkp LCLK         &mkp MCLK             &mkp RCLK          &mkp MB5       &mt RIGHT_WIN LA(LC(F11))
+                                                   &kp LA(LC(X))  &kp LA(LC(U))  &kp LA(LC(G))      &kp C_FAST_FORWARD  &none             &kp C_REWIND
             >;
         };
 
