@@ -95,6 +95,16 @@
             bindings = <&kp RS(TAB)>;
             key-positions = <9 8>;
         };
+
+        L-shift {
+            bindings = <&kp LEFT_SHIFT>;
+            key-positions = <11 21>;
+        };
+
+        L-ctrl {
+            bindings = <&kp LCTRL>;
+            key-positions = <12 22>;
+        };
     };
 
     keymap {
