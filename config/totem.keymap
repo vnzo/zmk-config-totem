@@ -22,9 +22,7 @@
 #define TVP1 4
 #define TVP2 5
 
-&lt {
-    quick-tap-ms = <200>;
-};
+&lt { quick-tap-ms = <200>; };
 
 &mt {
     quick-tap-ms = <100>;
@@ -34,7 +32,6 @@
 };
 
 / {
-
     behaviors {
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
@@ -114,32 +111,6 @@
             key-positions = <19 31>;
         };
 
-        space1 {
-            timeout-ms = <50>;
-            bindings = <&kp SPACE>;
-            key-positions = <13 24>;
-        };
-
-        home {
-            timeout-ms = <50>;
-            bindings = <&kp HOME>;
-            key-positions = <6 16>;
-        };
-
-        ble-clr-all {
-            timeout-ms = <50>;
-            bindings = <&bt BT_CLR_ALL>;
-            key-positions = <15 26>;
-            layers = <5>;
-        };
-
-        blu-clr-current {
-            timeout-ms = <50>;
-            bindings = <&bt BT_CLR>;
-            key-positions = <19 30>;
-            layers = <5>;
-        };
-
         tab {
             timeout-ms = <50>;
             bindings = <&kp TAB>;
@@ -150,13 +121,6 @@
             timeout-ms = <50>;
             bindings = <&kp RS(TAB)>;
             key-positions = <8 9>;
-        };
-
-        numpad-lock {
-            timeout-ms = <50>;
-            bindings = <&kp KP_NUMLOCK>;
-            key-positions = <8 9>;
-            layers = <1>;
         };
 
         l-mid-up {
@@ -221,6 +185,21 @@
             bindings = <&kp LEFT_SHIFT>;
             key-positions = <10 20>;
         };
+
+        space2 {
+            bindings = <&kp SPACE>;
+            key-positions = <14 25>;
+        };
+
+        less-left {
+            bindings = <&kp LESS_THAN>;
+            key-positions = <11 22>;
+        };
+
+        greater {
+            bindings = <&kp GREATER_THAN>;
+            key-positions = <13 24>;
+        };
     };
 
     keymap {
@@ -245,10 +224,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                     &lt 5 Q  &kp H        &kp O               &mt LEFT_WIN U   &kp QUESTION    &kp G        &mt RIGHT_WIN C  &kp R            &kp F    &kp Z
-                     &kp Y    &kp I        &kp E               &mt LSHFT A      &lt 6 PERIOD    &kp D        &mt RSHFT T      &kp S            &kp N    &kp B
-&mt LEFT_WIN ESCAPE  &kp J    &mt LCTRL X  &mt LEFT_ALT COMMA  &kp K            &kp SQT         &kp W        &kp M            &mt RIGHT_ALT L  &mt P P  &kp V  &mt RIGHT_WIN C_AL_FILE_BROWSER
-                                           &kp LALT            &lt 1 BACKSPACE  &lt 2 ENTER     &lt 3 SPACE  &lt 4 DELETE     &kp RALT
+                     &lt 5 Q  &kp H        &kp O               &mt LEFT_WIN U   &kp QUESTION    &kp G        &mt RIGHT_WIN C  &kp R            &kp F        &kp Z
+                     &kp Y    &kp I        &kp E               &mt LSHFT A      &lt 6 PERIOD    &kp D        &mt RSHFT T      &kp S            &kp N        &kp B
+&mt LEFT_WIN ESCAPE  &kp J    &mt LCTRL X  &mt LEFT_ALT COMMA  &kp K            &kp SQT         &kp W        &kp M            &mt RIGHT_ALT L  &mt RCTRL P  &kp V  &mt RIGHT_WIN C_AL_MY_COMPUTER
+                                           &lt 7 BACKSPACE     &lt 1 BACKSPACE  &lt 2 ENTER     &lt 3 SPACE  &lt 4 DELETE     &lt 8 DELETE
             >;
         };
 
@@ -375,10 +354,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &trans  &trans  &trans  &trans  &trans    &bt BT_PRV  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_NXT
-        &trans  &trans  &trans  &trans  &trans    &trans      &bt BT_SEL 4   &bt BT_DISC 4  &trans         &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans      &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &trans      &trans
-                        &trans  &trans  &trans    &trans      &bt BT_DISC 0  &bt BT_SEL 0
+            &trans         &bt BT_PRV     &trans         &bt BT_NXT     &trans           &trans         &bt BT_PRV     &trans         &bt BT_NXT     &trans
+            &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4    &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_SEL 4
+&bt BT_CLR  &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4     &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4  &bt BT_CLR_ALL
+                                          &trans         &trans         &trans           &trans         &trans         &trans
             >;
         };
 
