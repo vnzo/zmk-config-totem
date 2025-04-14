@@ -200,6 +200,21 @@
             bindings = <&kp GREATER_THAN>;
             key-positions = <13 24>;
         };
+
+        ctrl-right2 {
+            bindings = <&kp RCTRL>;
+            key-positions = <18 29>;
+        };
+
+        mouse-left {
+            bindings = <&msc SCRL_DOWN>;
+            key-positions = <27 16>;
+        };
+
+        mouse-right {
+            bindings = <&msc SCRL_UP>;
+            key-positions = <6 16>;
+        };
     };
 
     keymap {
