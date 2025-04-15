@@ -215,6 +215,12 @@
             bindings = <&msc SCRL_UP>;
             key-positions = <6 16>;
         };
+
+        space3 {
+            bindings = <&kp SPACE>;
+            key-positions = <13 24>;
+            layers = <0>;
+        };
     };
 
     keymap {
@@ -387,10 +393,10 @@
 
         layer_7 {
             bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+        &kp LA(TAB)  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+        &trans       &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans       &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                             &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
 
