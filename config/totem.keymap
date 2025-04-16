@@ -78,7 +78,7 @@
         esc {
             timeout-ms = <50>;
             key-positions = <22 23>;
-            bindings = <&kp QUESTION>;
+            bindings = <&kp ESCAPE>;
         };
 
         del {
@@ -380,10 +380,10 @@
 
         layer_8 {
             bindings = <
-        &trans  &kp C_POWER  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &trans       &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans       &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                             &trans  &trans  &trans    &trans  &trans  &trans
+        &trans  &kp K_PWR  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+        &trans  &trans     &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                           &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
