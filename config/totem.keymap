@@ -275,10 +275,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                   &kp LG(V)      &kp LC(PAGE_UP)         &kp LC(PAGE_DOWN)  &kp LG(D)           &kp LA(LG(PRINTSCREEN))    &trans         &kp F7         &kp F8         &kp F9  &kp F12
-                   &kp LC(W)      &kp LG(LC(LEFT_ARROW))  &kp LC(LG(DOWN))   &kp LC(LG(RIGHT))   &kp PG_UP                  &kp HOME       &kp F4         &kp F5         &kp F6  &kp F11
-&mt LEFT_WIN HOME  &kp LC(LS(T))  &kp LA(LS(ESCAPE))      &kp LC(LG(F4))     &kp LA(ESCAPE)      &kp PAGE_DOWN              &kp END        &kp F1         &kp F2         &kp F3  &kp F10  &kp LS(LA(F9))
-                                                          &kp C_REWIND       &kp C_FAST_FORWARD  &none                      &kp LS(LA(G))  &kp LS(LA(X))  &kp LS(LA(C))
+                   &kp LG(V)      &kp LC(PAGE_UP)         &kp LC(PAGE_DOWN)  &kp LG(D)          &kp LA(LG(PRINTSCREEN))    &trans         &kp F7         &kp F8         &kp F9  &kp F12
+                   &kp LC(W)      &kp LG(LC(LEFT_ARROW))  &kp LC(LG(DOWN))   &kp LC(LG(RIGHT))  &kp PG_UP                  &kp HOME       &kp F4         &kp F5         &kp F6  &kp F11
+&mt LEFT_WIN HOME  &kp LC(LS(T))  &kp LA(LS(ESCAPE))      &kp LC(LG(F4))     &kp LA(ESCAPE)     &kp PAGE_DOWN              &kp END        &kp F1         &kp F2         &kp F3  &kp F10  &kp LS(LA(F9))
+                                                          &kp LS(C_PREV)     &kp LS(C_NEXT)     &none                      &kp LS(LA(G))  &kp LS(LA(X))  &kp LS(LA(C))
             >;
         };
 
