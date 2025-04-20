@@ -88,7 +88,7 @@
         };
 
         tab2 {
-            timeout-ms = <100>;
+            timeout-ms = <40>;
             key-positions = <1 2>;
             bindings = <&kp TAB>;
         };
