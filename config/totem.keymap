@@ -387,7 +387,7 @@
         &kp LA(TAB)  &trans  &trans  &trans                  &trans                &trans  &trans  &trans  &trans  &trans
         &trans       &trans  &trans  &trans                  &trans                &trans  &trans  &trans  &trans  &trans
 &trans  &trans       &trans  &trans  &trans                  &trans                &trans  &trans  &trans  &trans  &trans  &trans
-                             &trans  &kp LS(LC(C_PREVIOUS))  &kp LS(LC(C_NEXT))    &trans  &trans  &trans
+                             &trans  &kp RS(RC(C_PREVIOUS))  &kp RS(RC(C_NEXT))    &trans  &trans  &trans
             >;
         };
 
