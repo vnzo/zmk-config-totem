@@ -236,14 +236,12 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                     &lt 5 Q  &kp H        &kp O               &mt LEFT_WIN U   &kp QUESTION    &kp G        &mt RIGHT_WIN C  &kp R                   &kp F        &kp Z
-                     &kp Y    &kp I        &kp E               &mt LSHFT A      &lt 6 PERIOD    &kp D        &mt RSHFT T      &kp S                   &kp N        &kp B
+                     &lt 7 Q  &kp H        &kp O               &mt LEFT_WIN U   &kp QUESTION    &kp G        &mt RIGHT_WIN C  &kp R                   &kp F        &kp Z
+                     &kp Y    &kp I        &kp E               &mt LSHFT A      &lt 0 PERIOD    &kp D        &mt RSHFT T      &kp S                   &kp N        &kp B
 &mt LEFT_WIN ESCAPE  &kp J    &mt LCTRL X  &mt LEFT_ALT COMMA  &kp K            &kp SQT         &kp W        &kp M            &mt RIGHT_ALT L         &mt RCTRL P  &kp V  &mt RIGHT_WIN C_AL_MY_COMPUTER
-                                           &lt 7 C_MEDIA_WWW   &lt 1 BACKSPACE  &lt 2 ENTER     &lt 3 SPACE  &lt 4 DELETE     &lt 8 C_MEDIA_COMPUTER
+                                           &lt 0 C_MEDIA_WWW   &lt 1 BACKSPACE  &lt 2 ENTER     &lt 3 SPACE  &lt 4 DELETE     &lt 0 C_MEDIA_COMPUTER
             >;
         };
-
-        // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
         L1_EDIT {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
@@ -269,8 +267,6 @@
             >;
         };
 
-        // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-
         L2_NAVI {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 
@@ -294,8 +290,6 @@
                                                           &kp LS(C_PREV)     &kp LS(C_NEXT)     &none                      &kp LS(LA(G))  &kp LS(LA(X))  &kp LS(LA(C))
             >;
         };
-
-        // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
         L3_PUNC {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
@@ -321,8 +315,6 @@
             >;
         };
 
-        // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-
         L4_FNMO {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 
@@ -347,7 +339,25 @@
             >;
         };
 
-        // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+        layer_6 {
+            label = "BASE";
+            bindings = <
+                     &kp Q  &kp H  &kp O      &kp U     &kp QUESTION    &kp G      &kp C       &kp R      &kp F  &kp Z
+                     &kp Y  &kp I  &kp E      &kp A     &kp DOT         &kp D      &kp T       &kp S      &kp N  &kp B
+&mt LEFT_WIN ESCAPE  &kp J  &kp X  &kp COMMA  &kp K     &kp SQT         &kp W      &kp M       &kp L      &kp P  &kp V  &mt RIGHT_WIN C_AL_MY_COMPUTER
+                                   &kp SPACE  &kp BSPC  &kp SPACE       &kp SPACE  &kp DELETE  &kp SPACE
+            >;
+        };
+
+        layer_8 {
+            label = "cs";
+            bindings = <
+                     &kp LC(LS(Q))  &kp LC(LS(H))  &kp O      &kp U     &kp QUESTION    &kp G      &kp C       &kp R      &kp F  &kp Z
+                     &kp LC(LS(Y))  &kp LC(LS(I))  &kp E      &kp A     &kp DOT         &kp D      &kp T       &kp S      &kp N  &kp B
+&mt LEFT_WIN ESCAPE  &kp LC(LS(J))  &kp LC(LS(X))  &kp COMMA  &kp K     &kp SQT         &kp W      &kp M       &kp L      &kp P  &kp V  &mt RIGHT_WIN C_AL_MY_COMPUTER
+                                                   &kp SPACE  &kp BSPC  &kp SPACE       &kp SPACE  &kp DELETE  &kp SPACE
+            >;
+        };
 
         L5_BLUE {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
@@ -370,33 +380,6 @@
             &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4    &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_SEL 4
 &bt BT_CLR  &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4     &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4  &bt BT_CLR_ALL
                                           &trans         &trans         &trans           &trans         &trans         &trans
-            >;
-        };
-
-        L5_MEDI {
-            bindings = <
-        &kp LC(PRINTSCREEN)  &trans  &trans  &trans  &trans    &trans  &trans  &kp C_VOLUME_UP    &trans  &trans
-        &trans               &trans  &trans  &trans  &trans    &trans  &trans  &kp C_VOLUME_DOWN  &trans  &trans
-&trans  &trans               &trans  &trans  &trans  &trans    &trans  &trans  &kp C_MUTE         &trans  &trans  &trans
-                                     &trans  &trans  &trans    &trans  &trans  &trans
-            >;
-        };
-
-        layer_7 {
-            bindings = <
-        &kp LA(TAB)  &trans  &trans  &trans                  &trans                &trans  &trans  &trans  &trans  &trans
-        &trans       &trans  &trans  &trans                  &trans                &trans  &trans  &trans  &trans  &trans
-&trans  &trans       &trans  &trans  &trans                  &trans                &trans  &trans  &trans  &trans  &trans  &trans
-                             &trans  &kp RS(RC(C_PREVIOUS))  &kp RS(RC(C_NEXT))    &trans  &trans  &trans
-            >;
-        };
-
-        layer_8 {
-            bindings = <
-        &trans  &kp K_PWR  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &trans     &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans     &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                           &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
