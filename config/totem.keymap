@@ -236,8 +236,8 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                     &lt 7 Q  &kp H        &kp O               &mt LEFT_WIN U   &lt 10 QUESTION    &lt 10 G     &mt RIGHT_WIN C  &kp R            &kp F        &lt 8 Z
-                     &kp Y    &kp I        &kp E               &mt LSHFT A      &lt 9 PERIOD       &kp D        &mt RSHFT T      &kp S            &kp N        &kp B
+                     &lt 0 Q  &kp H        &kp O               &mt LEFT_WIN U   &lt 10 QUESTION    &lt 10 G     &mt RIGHT_WIN C  &kp R            &kp F        &lt 0 Z
+                     &kp Y    &kp I        &kp E               &mt LSHFT A      &lt 0 PERIOD       &kp D        &mt RSHFT T      &kp S            &kp N        &kp B
 &mt LEFT_WIN ESCAPE  &kp J    &mt LCTRL X  &mt LEFT_ALT COMMA  &kp K            &kp SQT            &kp W        &kp M            &mt RIGHT_ALT L  &mt RCTRL P  &kp V    &mt RIGHT_WIN C_AL_MY_COMPUTER
                                            &lt 5 SPACE         &lt 1 BACKSPACE  &lt 2 ENTER        &lt 3 SPACE  &lt 4 DELETE     &lt 6 SPACE
             >;
@@ -287,7 +287,7 @@
                    &kp LG(V)      &kp LC(PAGE_UP)         &kp LC(PAGE_DOWN)  &kp LG(D)          &kp LA(LG(PRINTSCREEN))    &trans         &kp F7         &kp F8         &kp F9  &kp F12
                    &kp LC(W)      &kp LG(LC(LEFT_ARROW))  &kp LC(LG(DOWN))   &kp LC(LG(RIGHT))  &kp PG_UP                  &kp HOME       &kp F4         &kp F5         &kp F6  &kp F11
 &mt LEFT_WIN HOME  &kp LC(LS(T))  &kp LA(LS(ESCAPE))      &kp LC(LG(F4))     &kp LA(ESCAPE)     &kp PAGE_DOWN              &kp END        &kp F1         &kp F2         &kp F3  &kp F10  &kp LS(LA(F9))
-                                                          &kp SPACE          &kp SPACE          &none                      &kp LS(LA(G))  &kp LS(LA(X))  &kp LS(LA(C))
+                                                          &kp LS(LA(Q))      &kp LS(LA(Z))      &none                      &kp LS(LA(G))  &kp LS(LA(X))  &kp LS(LA(C))
             >;
         };
 
@@ -311,7 +311,7 @@
                 &kp CARET  &kp DOUBLE_QUOTES  &kp EXCLAMATION  &kp LS(LA(LC(U)))     &kp LS(LG(S))    &trans           &kp LEFT_BRACKET      &kp HASH      &kp RIGHT_BRACKET      &kp END
                 &kp PIPE   &kp UNDERSCORE     &kp SEMICOLON    &kp SLASH             &kp AT_SIGN      &kp LEFT_BRACE   &kp LEFT_PARENTHESIS  &kp ASTERISK  &kp RIGHT_PARENTHESIS  &kp DOLLAR
 &kp LA(LC(F8))  &kp INS    &kp AMPERSAND      &kp PERCENT      &kp NON_US_BACKSLASH  &kp GRAVE        &kp RIGHT_BRACE  &kp LESS_THAN         &kp HOME      &kp GREATER_THAN       &kp TILDE   &kp LA(LC(F9))
-                                              &kp SPACE        &kp MINUS             &kp COLON        &none            &kp SPACE             &kp SPACE
+                                              &kp SPACE        &kp MINUS             &kp COLON        &none            &kp LA(LC(F6))        &kp SPACE
             >;
         };
 
@@ -332,57 +332,60 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                                 &kp F21  &kp F22  &kp F23        &kp F24        &caps_word         &kp LA(LC(G))       &kp C_AC_PASTE    &kp LA(LG(UP_ARROW))  &kp LS(F10)        &kp LA(LC(Z))
-                                 &kp F17  &kp F18  &kp F19        &kp F20        &kp C_AC_SEARCH    &mkp MB2            &kp LA(LG(LEFT))  &kp LA(LG(DOWN))      &kp LA(LG(RIGHT))  &mkp MB4
-&mt LA(LC(LEFT_WIN)) LA(LC(F6))  &kp F13  &kp F14  &kp F15        &kp F16        &kp CAPS           &mkp MB3            &mkp LCLK         &mkp MCLK             &mkp RCLK          &mkp MB5       &mt RIGHT_WIN LA(LC(F11))
-                                                   &kp LA(LC(X))  &kp LA(LC(U))  &kp LA(LC(G))      &kp C_FAST_FORWARD  &none             &kp C_REWIND
+                &kp F21  &kp F22  &kp F23        &kp F24        &caps_word         &kp LA(LC(G))  &kp C_AC_PASTE    &kp LA(LG(UP_ARROW))  &kp LS(F10)        &kp LA(LC(Z))
+                &kp F17  &kp F18  &kp F19        &kp F20        &kp C_AC_SEARCH    &mkp MB2       &kp LA(LG(LEFT))  &kp LA(LG(DOWN))      &kp LA(LG(RIGHT))  &mkp MB4
+&kp LA(LC(F6))  &kp F13  &kp F14  &kp F15        &kp F16        &kp CAPS           &mkp MB3       &mkp LCLK         &mkp MCLK             &mkp RCLK          &mkp MB5       &kp LA(LC(F11))
+                                  &kp LA(LC(X))  &kp LA(LC(U))  &kp LA(LC(G))      &kp C_REWIND   &none             &kp C_FAST_FORWARD
             >;
         };
 
         L8-cs {
             label = "cs";
             bindings = <
-                     &kp LC(LS(Q))  &kp LC(LS(H))  &kp LC(LS(O))      &kp LC(LS(U))  &kp LC(LS(QUESTION))    &kp LC(LS(G))  &kp LC(LS(C))  &kp LC(LS(R))  &kp LC(LS(F))  &kp LC(LS(Z))
-                     &kp LC(LS(Y))  &kp LC(LS(I))  &kp LC(LS(E))      &kp LC(LS(A))  &kp LC(LS(DOT))         &kp LC(LS(D))  &kp LC(LS(T))  &kp LC(LS(S))  &kp LC(LS(N))  &kp LC(LS(B))
-&mt LEFT_WIN ESCAPE  &kp LC(LS(J))  &kp LC(LS(X))  &kp LC(LS(COMMA))  &kp LC(LS(K))  &kp LC(LS(SQT))         &kp LC(LS(W))  &kp LC(LS(M))  &kp LC(LS(L))  &kp LC(LS(P))  &kp LC(LS(V))  &mt RIGHT_WIN C_AL_MY_COMPUTER
-                                                   &kp SPACE          &kp BSPC       &kp SPACE               &kp SPACE      &kp DELETE     &kp SPACE
+                &kp LC(LS(Q))  &kp LC(LS(H))  &kp LC(LS(O))      &kp LC(LS(U))  &kp LC(LS(QUESTION))    &kp LC(LS(G))  &kp LC(LS(C))  &kp LC(LS(R))  &kp LC(LS(F))  &kp LC(LS(Z))
+                &kp LC(LS(Y))  &kp LC(LS(I))  &kp LC(LS(E))      &kp LC(LS(A))  &kp LC(LS(DOT))         &kp LC(LS(D))  &kp LC(LS(T))  &kp LC(LS(S))  &kp LC(LS(N))  &kp LC(LS(B))
+&kp LC(LS(F8))  &kp LC(LS(J))  &kp LC(LS(X))  &kp LC(LS(COMMA))  &kp LC(LS(K))  &kp LC(LS(SQT))         &kp LC(LS(W))  &kp LC(LS(M))  &kp LC(LS(L))  &kp LC(LS(P))  &kp LC(LS(V))  &kp LC(LS(F9))
+                                              &trans             &kp BSPC       &kp SPACE               &kp SPACE      &kp DELETE     &kp SPACE
             >;
         };
 
         L6-acs {
             label = "acs";
             bindings = <
-                     &kp LC(LS(LA(Q)))  &kp LC(LS(LA(H)))  &kp LC(LS(LA(O)))      &kp LC(LS(LA(U)))  &kp LC(LS(LA(QUESTION)))    &kp LC(LS(LA(G)))  &kp LC(LS(LA(C)))  &kp LC(LS(LA(R)))  &kp LC(LS(LA(F)))  &kp LC(LS(LA(Z)))
-                     &kp LC(LS(LA(Y)))  &kp LC(LS(LA(I)))  &kp LC(LS(LA(E)))      &kp LC(LS(LA(A)))  &kp LC(LS(LA(DOT)))         &kp LC(LS(LA(D)))  &kp LC(LS(LA(T)))  &kp LC(LS(LA(S)))  &kp LC(LS(LA(N)))  &kp LC(LS(LA(B)))
-&mt LEFT_WIN ESCAPE  &kp LC(LS(LA(J)))  &kp LC(LS(LA(X)))  &kp LC(LS(LA(COMMA)))  &kp LC(LS(LA(K)))  &kp LC(LS(LA(SQT)))         &kp LC(LS(LA(W)))  &kp LC(LS(LA(M)))  &kp LC(LS(LA(L)))  &kp LC(LS(LA(P)))  &kp LC(LS(LA(V)))  &mt RIGHT_WIN C_AL_MY_COMPUTER
-                                                           &kp SPACE              &kp BSPC           &kp SPACE                   &kp SPACE          &kp DELETE         &kp SPACE
+                    &kp LC(LS(LA(Q)))  &kp LC(LS(LA(H)))  &kp LC(LS(LA(O)))      &kp LC(LS(LA(U)))  &kp LC(LS(LA(QUESTION)))    &kp LC(LS(LA(G)))  &kp LC(LS(LA(C)))  &kp LC(LS(LA(R)))  &kp LC(LS(LA(F)))  &kp LC(LS(LA(Z)))
+                    &kp LC(LS(LA(Y)))  &kp LC(LS(LA(I)))  &kp LC(LS(LA(E)))      &kp LC(LS(LA(A)))  &kp LC(LS(LA(DOT)))         &kp LC(LS(LA(D)))  &kp LC(LS(LA(T)))  &kp LC(LS(LA(S)))  &kp LC(LS(LA(N)))  &kp LC(LS(LA(B)))
+&kp LC(LS(LA(F8)))  &kp LC(LS(LA(J)))  &kp LC(LS(LA(X)))  &kp LC(LS(LA(COMMA)))  &kp LC(LS(LA(K)))  &kp LC(LS(LA(SQT)))         &kp LC(LS(LA(W)))  &kp LC(LS(LA(M)))  &kp LC(LS(LA(L)))  &kp LC(LS(LA(P)))  &kp LC(LS(LA(V)))  &kp LC(LA(LS(F9)))
+                                                          &kp SPACE              &kp BSPC           &kp SPACE                   &kp SPACE          &kp DELETE         &trans
             >;
         };
 
         L7-pinky {
+            label = "as";
             bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &kp Z   &trans    &trans  &trans  &trans
+                &kp LS(LA(Q))  &kp LS(LA(H))  &kp LS(LA(O))      &kp LS(LA(U))  &kp LS(LA(QUESTION))    &kp LS(LA(G))  &kp LS(LA(C))  &kp LS(LA(R))  &kp LS(LA(F))  &kp LS(LA(Z))
+                &kp LS(LA(Y))  &kp LS(LA(I))  &kp LS(LA(E))      &kp LS(LA(A))  &kp LS(LA(DOT))         &kp LS(LA(D))  &kp LS(LA(T))  &kp LS(LA(S))  &kp LS(LA(N))  &kp LS(LA(B))
+&kp LS(LA(F6))  &kp LS(LA(J))  &kp LS(LA(X))  &kp LS(LA(COMMA))  &kp LS(LA(K))  &kp LS(LA(SQT))         &kp LS(LA(W))  &kp LS(LA(M))  &kp LS(LA(L))  &kp LS(LA(P))  &kp LS(LA(V))  &kp LS(LA(F11))
+                                              &kp SPACE          &kp BSPC       &kp SPACE               &kp SPACE      &kp DELETE     &trans
             >;
         };
 
         L8-pinky {
+            label = "ac";
             bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+                &kp LC(LA(Q))  &kp LC(LA(H))  &kp LC(LA(O))      &kp LC(LA(U))  &kp LC(LA(QUESTION))    &kp LC(LA(G))  &kp LC(LA(C))  &kp LC(LA(R))  &kp LC(LA(A))  &kp LC(LA(Z))
+                &kp LC(LA(Y))  &kp LC(LA(I))  &kp LC(LA(E))      &kp LC(LA(A))  &kp LC(LA(DOT))         &kp LC(LA(D))  &kp LC(LA(T))  &kp LC(LA(S))  &kp LC(LA(N))  &kp LC(LA(B))
+&kp LC(LA(F6))  &kp LC(LA(J))  &kp LC(LA(X))  &kp LC(LA(COMMA))  &kp LC(LA(K))  &kp LC(LA(SQT))         &kp LC(LA(W))  &kp LC(LA(M))  &kp LC(LA(L))  &kp LC(LA(P))  &kp LC(LA(V))  &kp LA(LC(F11))
+                                              &kp SPACE          &kp BSPC       &kp SPACE               &kp SPACE      &kp DELETE     &trans
             >;
         };
 
-        L9-edit-puls {
+        L9-edit+ {
+            label = "edit+";
             bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+                     &kp LC(LS(LA(Q)))  &kp LC(LS(LA(H)))  &kp LC(LS(LA(O)))      &kp LC(LS(LA(U)))  &kp LC(LS(LA(QUESTION)))    &kp LC(LS(LA(G)))  &kp LC(LS(LA(C)))  &kp LC(LS(LA(R)))  &kp LC(LS(LA(F)))  &kp LC(LS(LA(Z)))
+                     &kp LC(LS(LA(Y)))  &kp LC(LS(LA(I)))  &kp LC(LS(LA(E)))      &kp LC(LS(LA(A)))  &kp LC(LS(LA(DOT)))         &kp LC(LS(LA(D)))  &kp LC(LS(LA(T)))  &kp LC(LS(LA(S)))  &kp LC(LS(LA(N)))  &kp LC(LS(LA(B)))
+&mt LEFT_WIN ESCAPE  &kp LC(LS(LA(J)))  &kp LC(LS(LA(X)))  &kp LC(LS(LA(COMMA)))  &kp LC(LS(LA(K)))  &kp LC(LS(LA(SQT)))         &kp LC(LS(LA(W)))  &kp LC(LS(LA(M)))  &kp LC(LS(LA(L)))  &kp LC(LS(LA(P)))  &kp LC(LS(LA(V)))  &mt RIGHT_WIN C_AL_MY_COMPUTER
+                                                           &kp SPACE              &kp BSPC           &kp SPACE                   &kp SPACE          &kp DELETE         &trans
             >;
         };
 
