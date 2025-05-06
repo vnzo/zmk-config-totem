@@ -382,10 +382,10 @@
         L9-edit+ {
             label = "edit+";
             bindings = <
-                     &kp LC(LS(LA(Q)))  &kp LC(LS(LA(H)))  &kp LC(LS(LA(O)))      &kp LC(LS(LA(U)))  &kp LC(LS(LA(QUESTION)))    &kp LC(LS(LA(G)))  &kp LC(LS(LA(C)))  &kp LC(LS(LA(R)))  &kp LC(LS(LA(F)))  &kp LC(LS(LA(Z)))
-                     &kp LC(LS(LA(Y)))  &kp LC(LS(LA(I)))  &kp LC(LS(LA(E)))      &kp LC(LS(LA(A)))  &kp LC(LS(LA(DOT)))         &kp LC(LS(LA(D)))  &kp LC(LS(LA(T)))  &kp LC(LS(LA(S)))  &kp LC(LS(LA(N)))  &kp LC(LS(LA(B)))
-&mt LEFT_WIN ESCAPE  &kp LC(LS(LA(J)))  &kp LC(LS(LA(X)))  &kp LC(LS(LA(COMMA)))  &kp LC(LS(LA(K)))  &kp LC(LS(LA(SQT)))         &kp LC(LS(LA(W)))  &kp LC(LS(LA(M)))  &kp LC(LS(LA(L)))  &kp LC(LS(LA(P)))  &kp LC(LS(LA(V)))  &mt RIGHT_WIN C_AL_MY_COMPUTER
-                                                           &kp SPACE              &kp BSPC           &kp SPACE                   &kp SPACE          &kp DELETE         &trans
+                       &kp LC(LS(LA(Q)))  &kp LC(LS(LA(H)))  &kp LC(LS(LA(O)))      &kp LC(LS(LA(U)))  &kp LC(LS(LA(QUESTION)))    &kp LC(LS(LA(G)))  &kp LC(LS(LA(C)))  &kp LC(LS(LA(R)))  &kp LC(LS(LA(F)))  &kp LC(LS(LA(Z)))
+                       &kp LC(LS(LA(Y)))  &kp LC(LS(LA(I)))  &kp LC(LS(LA(E)))      &kp LC(LS(LA(A)))  &kp LC(LS(LA(DOT)))         &kp LC(LS(LA(D)))  &kp LC(LS(LA(T)))  &kp LC(LS(LA(S)))  &kp LC(LS(LA(N)))  &kp LC(LS(LA(B)))
+&mt LC(LS(F5)) ESCAPE  &kp LC(LS(LA(J)))  &kp LC(LS(LA(X)))  &kp LC(LS(LA(COMMA)))  &kp LC(LS(LA(K)))  &kp LC(LS(LA(SQT)))         &kp LC(LS(LA(W)))  &kp LC(LS(LA(M)))  &kp LC(LS(LA(L)))  &kp LC(LS(LA(P)))  &kp LC(LS(LA(V)))  &kp LC(LS(F12))
+                                                             &kp LC(LS(F6))         &kp BSPC           &kp LC(LS(F7))              &kp LC(LS(F10))    &kp DELETE         &trans
             >;
         };
 
