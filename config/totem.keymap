@@ -66,7 +66,7 @@
         tab {
             timeout-ms = <100>;
             key-positions = <0 1>;
-            bindings = <&kp TAB>;
+            bindings = <&kp ESCAPE>;
         };
 
         qmark {
@@ -251,10 +251,10 @@
         L1-acs {
             label = "acs";
             bindings = <
-                   &kp LC(LS(LA(Q)))  &kp LC(LS(LA(H)))  &kp LC(LS(LA(O)))      &kp LC(LS(LA(U)))  &kp LC(LS(LA(QUESTION)))    &kp LC(LS(LA(G)))  &kp LC(LS(LA(C)))  &kp LC(LS(LA(R)))  &kp LC(LS(LA(F)))  &kp LC(LS(LA(Z)))
-                   &kp LC(LS(LA(Y)))  &kp LC(LS(LA(I)))  &kp LC(LS(LA(E)))      &kp LC(LS(LA(A)))  &kp LC(LS(LA(DOT)))         &kp LC(LS(LA(D)))  &kp LC(LS(LA(T)))  &kp LC(LS(LA(S)))  &kp LC(LS(LA(N)))  &kp LC(LS(LA(B)))
-&kp LC(LS(LA(Z)))  &kp LC(LS(LA(J)))  &kp LC(LS(LA(X)))  &kp LC(LS(LA(COMMA)))  &kp LC(LS(LA(K)))  &kp LC(LS(LA(SQT)))         &kp LC(LS(LA(W)))  &kp LC(LS(LA(M)))  &kp LC(LS(LA(L)))  &kp LC(LS(LA(P)))  &kp LC(LS(LA(V)))  &kp LC(LA(LS(Q)))
-                                                         &trans                 &kp C_PREV         &kp C_NEXT                  &kp LC(LS(LA(C)))  &kp LC(LS(LA(G)))  &kp LC(LS(LA(U)))
+                          &kp LC(LS(LA(Q)))  &kp LC(LS(LA(H)))  &kp LC(LS(LA(O)))      &kp LC(LS(LA(U)))  &kp LC(LS(LA(QUESTION)))    &kp LC(LS(LA(G)))         &kp LC(LS(LA(C)))         &kp LC(LS(LA(R)))         &kp LC(LS(LA(F)))  &kp LC(LS(LA(Z)))
+                          &kp LC(LS(LA(Y)))  &kp LC(LS(LA(I)))  &kp LC(LS(LA(E)))      &kp LC(LS(LA(A)))  &kp LC(LS(LA(DOT)))         &kp LC(LS(LA(D)))         &kp LC(LS(LA(T)))         &kp LC(LS(LA(S)))         &kp LC(LS(LA(N)))  &kp LC(LS(LA(B)))
+&kp LC(LS(LA(NUMBER_1)))  &kp LC(LS(LA(J)))  &kp LC(LS(LA(X)))  &kp LC(LS(LA(COMMA)))  &kp LC(LS(LA(K)))  &kp LC(LS(LA(SQT)))         &kp LC(LS(LA(W)))         &kp LC(LS(LA(M)))         &kp LC(LS(LA(L)))         &kp LC(LS(LA(P)))  &kp LC(LS(LA(V)))  &kp LC(LA(LS(NUMBER_5)))
+                                                                &trans                 &kp C_PREV         &kp C_NEXT                  &kp LC(LS(LA(NUMBER_2)))  &kp LC(LS(LA(NUMBER_3)))  &kp LC(LS(LA(NUMBER_4)))
             >;
         };
 
@@ -275,7 +275,7 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-          &kp LA(TAB)  &kp LC(C)  &kp UP_ARROW       &kp LA(LS(U))  &kp LA(LS(X))       &kp KP_MULTIPLY  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS
+          &kp LA(TAB)  &kp LC(C)  &kp UP_ARROW       &kp LA(LC(Z))  &kp LA(LS(Q))       &kp KP_MULTIPLY  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS
           &kp LA(F4)   &kp LEFT   &kp DOWN           &kp RIGHT      &kp LC(F)           &kp KP_DIVIDE    &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS
 &kp HOME  &kp INS      &kp LC(X)  &kp LC(Z)          &kp LC(V)      &kp LA(TAB)         &kp PERIOD       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp DOT    &kp C_AL_CALCULATOR
                                   &kp C_VOLUME_DOWN  &none          &kp C_PLAY_PAUSE    &kp EQUAL        &kp NUMBER_0  &kp LS(TAB)
@@ -357,10 +357,10 @@
         L6-cs {
             label = "cs";
             bindings = <
-                &kp LC(LS(Q))  &kp LC(LS(H))  &kp LC(LS(O))       &kp LC(LS(U))     &kp LC(LS(QUESTION))    &kp LC(LS(G))      &kp LC(LS(C))       &kp LC(LS(R))  &kp LC(LS(F))  &kp LC(LS(Z))
-                &kp LC(LS(Y))  &kp LC(LS(I))  &kp LC(LS(E))       &kp LC(LS(A))     &kp LC(LS(DOT))         &kp LC(LS(D))      &kp LC(LS(T))       &kp LC(LS(S))  &kp LC(LS(N))  &kp LC(LS(B))
-&kp LC(LS(F8))  &kp LC(LS(J))  &kp LC(LS(X))  &kp LC(LS(COMMA))   &kp LC(LS(K))     &kp LC(LS(SQT))         &kp LC(LS(W))      &kp LC(LS(M))       &kp LC(LS(L))  &kp LC(LS(P))  &kp LC(LS(V))  &kp LC(LS(F9))
-                                              &kp LC(LS(ESCAPE))  &kp LC(LS(BSPC))  &kp LC(LS(ENTER))       &kp LC(LS(SPACE))  &kp LC(LS(DELETE))  &trans
+                      &kp LC(LS(Q))  &kp LC(LS(H))  &kp LC(LS(O))         &kp LC(LS(U))         &kp LC(LS(QUESTION))    &kp LC(LS(G))         &kp LC(LS(C))         &kp LC(LS(R))  &kp LC(LS(F))  &kp LC(LS(Z))
+                      &kp LC(LS(Y))  &kp LC(LS(I))  &kp LC(LS(E))         &kp LC(LS(A))         &kp LC(LS(DOT))         &kp LC(LS(D))         &kp LC(LS(T))         &kp LC(LS(S))  &kp LC(LS(N))  &kp LC(LS(B))
+&kp LC(LS(NUMBER_1))  &kp LC(LS(J))  &kp LC(LS(X))  &kp LC(LS(COMMA))     &kp LC(LS(K))         &kp LC(LS(SQT))         &kp LC(LS(W))         &kp LC(LS(M))         &kp LC(LS(L))  &kp LC(LS(P))  &kp LC(LS(V))  &kp LC(LS(NUMBER_7))
+                                                    &kp LC(LS(NUMBER_2))  &kp LC(LS(NUMBER_3))  &kp LC(LS(NUMBER_4))    &kp LC(LS(NUMBER_5))  &kp LC(LS(NUMBER_6))  &trans
             >;
         };
 
