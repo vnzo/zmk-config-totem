@@ -254,7 +254,7 @@
                           &kp LC(LS(LA(Q)))  &kp LC(LS(LA(H)))  &kp LC(LS(LA(O)))      &kp LC(LS(LA(U)))  &kp LC(LS(LA(QUESTION)))    &kp LC(LS(LA(G)))         &kp LC(LS(LA(C)))         &kp LC(LS(LA(R)))         &kp LC(LS(LA(F)))  &kp LC(LS(LA(Z)))
                           &kp LC(LS(LA(Y)))  &kp LC(LS(LA(I)))  &kp LC(LS(LA(E)))      &kp LC(LS(LA(A)))  &kp LC(LS(LA(DOT)))         &kp LC(LS(LA(D)))         &kp LC(LS(LA(T)))         &kp LC(LS(LA(S)))         &kp LC(LS(LA(N)))  &kp LC(LS(LA(B)))
 &kp LC(LS(LA(NUMBER_1)))  &kp LC(LS(LA(J)))  &kp LC(LS(LA(X)))  &kp LC(LS(LA(COMMA)))  &kp LC(LS(LA(K)))  &kp LC(LS(LA(SQT)))         &kp LC(LS(LA(W)))         &kp LC(LS(LA(M)))         &kp LC(LS(LA(L)))         &kp LC(LS(LA(P)))  &kp LC(LS(LA(V)))  &kp LC(LA(LS(NUMBER_5)))
-                                                                &trans                 &kp C_PREV         &kp C_NEXT                  &kp LC(LS(LA(NUMBER_2)))  &kp LC(LS(LA(NUMBER_3)))  &kp LC(LS(LA(NUMBER_4)))
+                                                                &trans                 &kp C_REWIND       &kp C_FAST_FORWARD          &kp LC(LS(LA(NUMBER_2)))  &kp LC(LS(LA(NUMBER_3)))  &kp LC(LS(LA(NUMBER_4)))
             >;
         };
 
@@ -275,10 +275,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-          &kp LA(TAB)  &kp LC(C)  &kp UP_ARROW       &kp LA(LC(Z))  &kp LA(LS(Q))       &kp KP_MULTIPLY  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS
-          &kp LA(F4)   &kp LEFT   &kp DOWN           &kp RIGHT      &kp LC(F)           &kp KP_DIVIDE    &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS
-&kp HOME  &kp INS      &kp LC(X)  &kp LC(Z)          &kp LC(V)      &kp LA(TAB)         &kp PERIOD       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp DOT    &kp C_AL_CALCULATOR
-                                  &kp C_VOLUME_DOWN  &none          &kp C_PLAY_PAUSE    &kp EQUAL        &kp NUMBER_0  &kp LS(TAB)
+          &kp LA(TAB)  &kp LC(C)  &kp UP_ARROW    &kp LA(LC(Z))  &kp LA(LS(Q))    &kp KP_MULTIPLY  &kp NUMBER_7  &kp NUMBER_8            &kp NUMBER_9  &kp PLUS
+          &kp LA(F4)   &kp LEFT   &kp DOWN        &kp RIGHT      &kp LC(F)        &kp KP_DIVIDE    &kp NUMBER_4  &kp NUMBER_5            &kp NUMBER_6  &kp MINUS
+&kp HOME  &kp INS      &kp LC(X)  &kp LC(Z)       &kp LC(V)      &kp LA(TAB)      &kp PERIOD       &kp NUMBER_1  &kp NUMBER_2            &kp NUMBER_3  &kp PAUSE_BREAK  &kp C_AL_CALCULATOR
+                                  &kp C_PREVIOUS  &none          &kp C_NEXT       &kp EQUAL        &kp NUMBER_0  &kp LS(LA(LC(PERIOD)))
             >;
         };
 
@@ -299,10 +299,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                    &kp LG(V)      &kp LC(PAGE_UP)         &kp LC(PAGE_DOWN)      &kp LG(D)          &kp LA(LG(PRINTSCREEN))    &kp PRINTSCREEN  &kp F7         &kp F8         &kp F9  &kp F12
-                    &kp LC(W)      &kp LG(LC(LEFT_ARROW))  &kp LC(LG(DOWN))       &kp LC(LG(RIGHT))  &kp PG_UP                  &kp HOME         &kp F4         &kp F5         &kp F6  &kp F11
-&kp LC(LS(ESCAPE))  &kp LC(LS(T))  &kp LA(LS(ESCAPE))      &kp LC(LG(F4))         &kp LA(ESCAPE)     &kp PAGE_DOWN              &kp END          &kp F1         &kp F2         &kp F3  &kp F10  &kp LS(LA(F9))
-                                                           &kp C_AC_FORWARD_MAIL  &kp K_FORWARD      &none                      &kp LS(LA(G))    &kp LS(LA(X))  &kp LS(LA(C))
+                    &kp LG(V)      &kp LC(PAGE_UP)         &kp LC(PAGE_DOWN)  &kp LG(D)          &kp LA(LG(PRINTSCREEN))    &kp PRINTSCREEN     &kp F7               &kp F8           &kp F9  &kp F12
+                    &kp LC(W)      &kp LG(LC(LEFT_ARROW))  &kp LC(LG(DOWN))   &kp LC(LG(RIGHT))  &kp PG_UP                  &kp HOME            &kp F4               &kp F5           &kp F6  &kp F11
+&kp LC(LS(ESCAPE))  &kp LC(LS(T))  &kp LA(LS(ESCAPE))      &kp LC(LG(F4))     &kp LA(ESCAPE)     &kp PAGE_DOWN              &kp END             &kp F1               &kp F2           &kp F3  &kp F10  &kp LS(LA(LC(F12)))
+                                                           &kp C_VOLUME_DOWN  &kp C_VOLUME_UP    &none                      &kp LS(LA(LC(F9)))  &kp LS(LA(LC(F10)))  &kp LS(LA(F11))
             >;
         };
 
