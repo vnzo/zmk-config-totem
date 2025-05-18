@@ -411,10 +411,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-            &trans         &bt BT_PRV     &trans         &bt BT_NXT     &trans           &trans         &bt BT_PRV     &trans         &bt BT_NXT     &trans
-            &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4    &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_SEL 4
-&bt BT_CLR  &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4     &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4  &bt BT_CLR_ALL
-                                          &trans         &trans         &kp Z            &trans         &trans         &trans
+            &kp KP_NUMLOCK  &bt BT_PRV     &bt BT_CLR_ALL  &bt BT_NXT     &trans           &kp KP_MULTIPLY          &kp KP_NUMBER_7  &kp KP_NUMBER_8          &kp KP_NUMBER_9  &kp KP_PLUS
+            &bt BT_DISC 0   &bt BT_DISC 1  &bt BT_DISC 2   &bt BT_DISC 3  &bt BT_DISC 4    &kp KP_DIVIDE            &kp KP_NUMBER_4  &kp KP_NUMBER_5          &kp KP_NUMBER_6  &kp KP_MINUS
+&bt BT_CLR  &bt BT_SEL 0    &bt BT_SEL 1   &bt BT_SEL 2    &bt BT_SEL 3   &bt BT_SEL 4     &kp KP_DOT               &kp KP_NUMBER_1  &kp KP_NUMBER_2          &kp KP_NUMBER_3  &kp KP_COMMA  &kp KP_ENTER
+                                           &kp K_PWR       &kp C_POWER    &bootloader      &kp KP_LEFT_PARENTHESIS  &kp KP_NUMBER_0  &kp KP_LEFT_PARENTHESIS
             >;
         };
     };
