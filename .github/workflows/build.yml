@@ -5,23 +5,30 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: zmkfirmware/zmk-build-arm:3.5
+      volumes:
+        - $GITHUB_WORKSPACE:/workdir
     steps:
       - uses: actions/checkout@v4
+        with:
+          path: /workdir
+      - name: Set Working Directory
+        run: cd /workdir
+      - name: Print Environment
+        run: |
+          echo "Current directory: $(pwd)"
+          echo "GITHUB_WORKSPACE: $GITHUB_WORKSPACE"
+          ls -la
+          ls -la config
       - name: Initialize West Workspace
         run: west init -l config
       - name: Update West Manifest
         run: west update
-      - name: Debug West Commands
-        run: |
-          west --version
-          west help
-          ls -la /github/workspace
-          cat /github/workspace/config/west.yml
-          find . -name west-commands.yml
+      - name: Check West Help
+        run: west help
       - name: Build totem_left
-        run: west build -p -b seeeduino_xiao_ble -d build/totem_left -- -DSHIELD=totem_left -DZMK_CONFIG=/github/workspace/config
+        run: west build -p -b seeeduino_xiao_ble -d build/totem_left -- -DSHIELD=totem_left -DZMK_CONFIG=/workdir/config
       - name: Build totem_right
-        run: west build -p -b seeeduino_xiao_ble -d build/totem_right -- -DSHIELD=totem_right -DZMK_CONFIG=/github/workspace/config
+        run: west build -p -b seeeduino_xiao_ble -d build/totem_right -- -DSHIELD=totem_right -DZMK_CONFIG=/workdir/config
       - name: Rename Artifacts
         run: |
           mkdir -p artifacts
@@ -31,4 +38,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: firmware
-          path: artifacts/*.uf2
+          path: /workdir/artifacts/*.uf2
