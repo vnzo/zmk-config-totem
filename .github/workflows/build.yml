@@ -4,13 +4,20 @@ jobs:
   build:
     runs-on: ubuntu-latest
     container:
-      image: zmkfirmware/zmk-build-arm:stable
+      image: zmkfirmware/zmk-build-arm:3.5
     steps:
       - uses: actions/checkout@v4
       - name: Initialize West Workspace
         run: west init -l config
       - name: Update West Manifest
         run: west update
+      - name: Debug West Commands
+        run: |
+          west --version
+          west help
+          ls -la /github/workspace
+          cat /github/workspace/config/west.yml
+          find . -name west-commands.yml
       - name: Build totem_left
         run: west build -p -b seeeduino_xiao_ble -d build/totem_left -- -DSHIELD=totem_left -DZMK_CONFIG=/github/workspace/config
       - name: Build totem_right
