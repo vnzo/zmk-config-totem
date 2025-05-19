@@ -3,7 +3,7 @@ manifest:
     - name: zmk
       url-base: https://github.com/zmkfirmware
     - name: zephyr
-      url-base: https://github.com/zephyrproject-rtos
+      url-base: https://github.com/zmkfirmware
   projects:
     - name: zmk
       remote: zmk
@@ -11,6 +11,6 @@ manifest:
       import: app/west.yml
     - name: zephyr
       remote: zephyr
-      revision: v4.0.0
+      revision: v3.5.0+zmk-fixes
   self:
     path: config
