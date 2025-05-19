@@ -11,6 +11,6 @@ manifest:
       import: app/west.yml
     - name: zephyr
       remote: zephyr
-      revision: v3.7.0
+      revision: v3.5.0
   self:
     path: config
