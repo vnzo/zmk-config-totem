@@ -2,6 +2,6 @@ name: Build Firmware
 on: [push, pull_request, workflow_dispatch]
 jobs:
   build:
-    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@<commit-hash>
     with:
       config_path: config
